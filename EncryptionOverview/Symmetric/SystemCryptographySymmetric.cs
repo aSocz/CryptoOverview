@@ -1,9 +1,9 @@
 ﻿using System.IO;
 using System.Security.Cryptography;
 
-namespace EncryptionOverview
+namespace EncryptionOverview.Symmetric
 {
-    public class SystemCryptography
+    public class SystemCryptographySymmetric : ISymmetricEncryptor
     {
         private static readonly byte[] SALT =
         {
